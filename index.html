@@ -236,10 +236,9 @@
                     
                 </div>
                 <div class="feedback-footer">
-                    <div class="page_num_none"></div>
-                    <div class="page_num_none"></div>
-                    <div class="page_num_none"></div>
-                    <div class="page_num_active"></div>
+                    <span class="page_num_none"></span>
+                    <span class="page_num_none"></span>                    
+                    <span class="page_num_active"></span>
                 </div>
             </div>
         </div>
@@ -254,6 +253,16 @@
                 </p>
             </div>
         </div>
-    
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+            $(document).ready(function ()
+             {
+                $('span').click(function(){
+                    $(this).siblings().removeClass('page_num_active').addClass('page_num_none');
+                    $(this).removeClass('page_num_none').addClass('page_num_active');
+                })                                
+            });
+
+        </script>
 </body>
 </html>
