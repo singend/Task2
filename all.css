@@ -1,0 +1,626 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+sub
+{
+    vertical-align: sub;
+}
+
+*,*::before,*::after
+{
+    box-sizing: border-box;    
+    font-family: 'Noto Sans TC', sans-serif;       
+}
+*::before
+{
+    color: #221E1F;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+img
+{
+    display:block;
+}
+.container {   
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/ball01.svg"),url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home.svg"),url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg");
+    background-repeat: no-repeat;    
+    background-size: 33%, 48%, 62%;
+    background-position: -222px 409px,calc(90%) 98px, right top;    
+    max-width: 1088px;           
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.header
+{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo
+{
+    width: 20%;
+    margin-left: 32px;
+}
+.logo img
+{
+    max-width: 100%;    
+}
+.logo-fee
+{
+    width: 12%;
+}
+.fee-desc
+{    
+    display: block;
+    text-align: center;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    color: #FFFFFF;
+    background: #FF5D50 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    padding-top: 8px;
+    padding-bottom: 8px;    
+}
+.wrap
+{
+    padding-top: 70px;
+    margin-bottom: 374px;
+
+}   
+
+.subtitle
+{
+    text-align: left;
+    font: normal normal bold 18px/26px Noto Sans TC;
+    color: #56C4C5;
+    margin-bottom: 8px;
+}
+
+.title
+{
+    text-align: left;
+    font: normal normal bold 48px/70px Noto Sans TC;    
+    margin-bottom: 16px;
+}
+
+.title-text
+{
+    text-align: left;
+    font: normal normal normal 20px/29px Noto Sans TC;
+    
+}
+
+
+.platform-wrap
+{
+    margin-bottom: 100px;
+}
+
+.platform-list
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.platform-title
+{
+    text-align: center;
+    font: normal normal bold 32px/46px Noto Sans TC;
+    margin-bottom: 48px;
+}
+
+.platform-item
+{
+    width: 22%;
+}
+.platform-img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.platform-img img
+{    
+    width: 90px;
+    height: 90px;
+}
+
+.platform-subtitle 
+{
+    text-align: center;
+    font: normal normal bold 24px/35px Noto Sans TC;
+    margin-bottom: 24px;
+}
+.platform-txt
+{
+    text-align: center;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    color: #747474;
+}
+.role-wrap
+{
+    margin-bottom: 100px;
+}
+
+.role-title
+{
+    text-align: center;
+    font: normal normal bold 32px/46px Noto Sans TC;
+    margin-bottom: 16px;
+}
+.role-txt
+{
+    text-align: center;
+    font: normal normal normal 20px/29px Noto Sans TC;
+    margin-bottom: 48px;
+}
+
+.role-list
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.role-item
+{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px; 
+    width: 23%;
+    margin-left: 16px;
+}
+
+.role-img img
+{
+    display:block;
+    border-radius: 12px 12px 0px 0px;
+}
+
+
+.role-subtitle
+{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    font: normal normal bold 16px/24px Noto Sans TC;
+    color: #56C4C5;
+}
+
+.role-subtxt
+{
+    text-align: center;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    padding-bottom: 24px;
+}
+.good-wrap
+{
+    padding-bottom: 100px;
+    display:flex;
+}
+
+.good-list
+{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+.good-item
+{
+    
+    padding-top: 32px;
+    padding-left: 32px;
+    width: 230px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;    
+    margin-bottom: 28px;
+}
+
+.good-item:not(:last-child) 
+{
+    margin-right: 47px;
+
+}
+
+.good-img
+{
+    width: 86px;
+    height: 86px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.good-img img
+{
+    width: 52px;
+    height: 52px;    
+}
+
+.good-title
+{
+    padding-top: 24px;
+    text-align: left;
+    font: normal normal bold 18px/26px Noto Sans TC;
+    /*color: #221E1F;*/
+}
+
+.goog-txt
+{
+    padding-top: 16px;
+    padding-bottom: 48px;
+    text-align: left;
+    font: normal normal normal 16px/24px Noto Sans TC;
+    /*color: #221E1F;*/
+}
+
+.good-fee
+{
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fee-title
+{
+    text-align: left;
+    font: normal normal bold 32px/46px Noto Sans TC;
+    
+}
+
+.fee-txt
+{
+    margin-top: 16px;
+    margin-bottom: 24px;
+    text-align: left;
+    font: normal normal normal 18px/26px Noto Sans TC;
+    
+}
+
+.fee-btn
+{
+    width: 136px;
+    display: block;
+    text-align: center;    
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background: #56C4C5 0% 0% no-repeat padding-box;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    color:#FFFFFF;
+} 
+
+.feedback-title
+{
+    text-align: center;
+    font: normal normal bold 32px/46px Noto Sans TC;
+    /*color: #221E1F;*/
+    padding-bottom: 48px;
+    
+}
+
+.feedback-wrap
+{    
+    display: flex; 
+    /*border:1px solid yellow;*/
+    padding-top: 56px; 
+}
+
+.feedback-item
+{
+    width: 33.3%;
+    /*border:1px solid blue;*/
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    position: relative;   
+}
+.feedback-footer
+{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.page_num_none
+{
+    margin-top: 24px;
+    margin-left: 8px;
+    background: #DDDDDD 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.page_num_active
+{
+    margin-top: 24px;
+    margin-left: 8px;
+    background: #FFD153 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.feedback-footer a:hover
+{
+    background: #FFD153 0% 0% no-repeat padding-box;
+    border-radius: 50px;
+    padding: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.iimg{
+    position:absolute;
+    width: 80px;
+    height: 80px;
+    top: -48px;
+    left: 32px;
+    box-shadow: 0px 2px 10px #00000014;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+.item-img
+{
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/user01.jpg");
+}
+
+.item-img2
+{    
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/user02.jpg");   
+}
+
+.item-img3
+{    
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/user03.jpg");   
+}
+.item-wrap
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding-top: 48px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 24px;
+}
+
+.item
+{    
+    padding-bottom: 23px;  
+    text-align: left;
+    font: normal normal normal 16px/24px Noto Sans TC;        
+    border-bottom: 1px solid rgba(125, 122, 122, 0.834);
+}
+
+.company
+{
+    padding-top: 24px;
+    padding-bottom: 8px;
+    text-align: left;
+    font: normal normal bold 16px/24px Noto Sans TC;    
+}
+
+.item-footer
+{
+    display:flex;
+    justify-content: space-between;
+    align-items:center ;
+}
+
+.position  
+{   
+    text-align: left;
+    font: normal normal normal 16px/24px Noto Sans TC;
+}
+
+.grade
+{
+    display: flex;  
+}
+
+.grade-img  
+{
+    width: 16px;   
+}
+
+
+.footer
+{
+   text-align: center;
+   background: #F5F5F5;
+}
+
+.footer-plan
+{    
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/chatTalker_images/home_footer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 503px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.plan-title
+{
+    text-align: center;
+    font: normal normal bold 32px/46px Noto Sans TC;    
+    padding-top: 260px;
+    padding-bottom: 48px;
+}
+.plan-link
+{
+    text-align: center;
+    color: #FFFFFF;
+    padding-top:12px;
+    padding-bottom: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background: #56C4C5 0% 0% no-repeat padding-box;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+}
+
+.footer p
+  {
+      padding-top: 16px;
+      padding-bottom: 16px;      
+  }
+ 
+
+  @media (max-width: 991px) {
+    .logo-fee
+    {
+        width: 20%;
+    }
+    .role-item
+    {        
+        width: 46%;
+        margin-bottom: 24px;
+    }
+    .good-wrap
+    {
+        flex-direction: column;
+    }
+    .good-list
+    {
+        justify-content:space-around
+    }
+    .good-item
+    {
+        width: 45%;
+    }
+
+    .good-item:not(:last-child) 
+    {
+        margin-right: 0px;
+
+    }
+
+    .fee-txt
+    {        
+        margin-right: 20px;
+        margin-left: 20px;
+        text-align: center;        
+    }
+  }  
+
+  @media (max-width: 575px) 
+{
+    .logo-fee
+    {
+        width: 34%;
+    }
+    .fee-desc
+    {
+        font: normal normal normal 16px/24px Noto Sans TC;
+    }
+    .platform-wrap
+    {
+        margin-bottom: 76px;
+    }
+
+   .platform-list
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+   .platform-item
+   {
+       width: 100%;
+       margin-bottom: 24px;
+   }
+
+   .role-item
+    {        
+        width: 100%;
+        margin-right: 16px;
+        margin-bottom: 24px;
+    }
+
+    .good-item
+    {
+        width: 100%;
+    }
+
+    .feedback-wrap
+    {    
+        flex-direction: column;
+        padding-top: 56px; 
+    }
+    .feedback-item
+    {
+        width: 100%;
+        padding-bottom: 34px;
+    }
+}
